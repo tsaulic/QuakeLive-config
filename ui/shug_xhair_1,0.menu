@@ -1,0 +1,253 @@
+#include "ui/menudef.h"
+
+#define ITEM_STUFF decoration visible 1
+#define MENU_STUFF fullScreen MENU_FALSE visible MENU_TRUE
+
+// green
+//#define XHAIR_COLOR backcolor 0 .9 0 .6
+//#define XHAIR2_COLOR backcolor 0 1 0 1
+
+// white
+//#define XHAIR_COLOR backcolor 1 1 1 1
+//#define XHAIR2_COLOR backcolor 1 1 1 1
+
+
+//orange
+#define XHAIR_COLOR backcolor 1 .3 0 1
+#define XHAIR2_COLOR backcolor 1 .3 0 1
+
+
+
+//yellow
+//#define XHAIR_COLOR backcolor 1 1 0 1
+//#define XHAIR2_COLOR backcolor 1 1 0 1
+
+
+
+
+
+//------------------------------------------------------grenade launcher, rocket launcher, proximity launcher
+
+
+
+
+menuDef
+	{
+	MENU_STUFF
+	rect 0 0 0 0
+
+	itemDef 
+		{
+		name "left '-'"
+		ITEM_STUFF
+		rect  309 239.1 10 1.8
+		background "ui/assets/halfgradleft"
+		XHAIR2_COLOR
+		style WINDOW_STYLE_FILLED
+		cvartest "fv_weapon"
+		showcvar {4 5 12}
+		}
+
+	itemDef
+		{
+		name "right '-'"
+		ITEM_STUFF
+		rect  321.5 239.1 10 1.8
+		background "ui/assets/halfgradright"
+		XHAIR2_COLOR
+		style WINDOW_STYLE_FILLED
+		cvartest "fv_weapon"
+		showcvar {4 5 12}
+		}
+  
+	itemDef
+		{
+		name "top '|'"
+		ITEM_STUFF
+		rect  319.3 225.5 1.4 13.3
+		background "ui/assets/hud/chatm.tga"
+		XHAIR2_COLOR
+       	style WINDOW_STYLE_FILLED
+		cvartest "fv_weapon"
+		showcvar {4 5 12}
+		}
+
+
+	itemDef
+		{
+		name "bottom '|'"
+		ITEM_STUFF
+		rect  319.3 241.5 1.4 13.3
+		background "ui/assets/verticalgradient"
+		XHAIR2_COLOR
+      	style WINDOW_STYLE_FILLED
+		cvartest "fv_weapon"
+		showcvar {4 5 12}
+		}
+
+
+
+
+
+
+//------------------------------------------------------rail gun, grappling hook
+
+
+
+
+
+
+
+
+	itemDef 
+		{
+		name "left '-'"
+		ITEM_STUFF
+		rect  313 239.1 6 1.8
+		background "ui/assets/halfgradleft"
+		XHAIR2_COLOR
+		style WINDOW_STYLE_FILLED
+		cvartest "fv_weapon"
+		showcvar {7 10}
+		}
+
+	itemDef
+		{
+		name "right '-'"
+		ITEM_STUFF
+		rect  321 239.1 6 1.8
+		background "ui/assets/halfgradright"
+		XHAIR2_COLOR
+		style WINDOW_STYLE_FILLED
+		cvartest "fv_weapon"
+		showcvar {7 10}
+		}
+  
+	itemDef
+		{
+		name "top '|'"
+		ITEM_STUFF
+		rect  319.3 231 1.4 8
+		background "ui/assets/hud/chatm.tga"
+		XHAIR2_COLOR
+       	style WINDOW_STYLE_FILLED
+		cvartest "fv_weapon"
+		showcvar {7 10}
+		}
+
+
+	itemDef
+		{
+		name "bottom '|'"
+		ITEM_STUFF
+		rect  319.3 241 1.4 8
+		background "ui/assets/verticalgradient"
+		XHAIR2_COLOR
+      	style WINDOW_STYLE_FILLED
+		cvartest "fv_weapon"
+		showcvar {7 10}
+		}
+
+
+
+
+
+
+//------------------------------------------------------gauntlet, big fucking gun
+
+
+
+
+
+
+	itemDef 
+		{
+		name "xhair 7, X with no center, 'cg_drawcrosshair 18'"
+		//rect 305 224.5 30 30	//large size (30x30)
+		rect 307.5 227 25 25	//medium size (25x25)
+		//rect 310 230 20 20	//small size (20x20)
+		ITEM_STUFF
+		background "gfx/2d/crosshair18.tga"
+		style 1
+		XHAIR_COLOR
+		cvartest "fv_weapon"
+		showcvar {1 9}
+		}
+
+
+
+
+
+
+//------------------------------------------------------shotgun, nailgun
+
+
+
+
+
+
+	itemDef 
+		{
+		name "xhair 8, empty circle thing, 'cg_drawcrosshair 14'"
+		//rect 302.5 222.5 35 35	//large size (35x35)
+		rect 305 225 30 30		//medium size (30x30)
+		//rect 307.5 227.5 25 25	//small size (25x25)
+		ITEM_STUFF
+		background "gfx/2d/crosshair14.tga"
+		style 1
+		XHAIR_COLOR
+		cvartest "fv_weapon"
+		showcvar {3 11}
+		}
+
+
+
+
+
+
+//------------------------------------------------------machine gun, lightning gun, plasma gun
+
+
+
+
+
+
+	itemDef 
+		{
+		name "xhair 9, funny looking parentheses, 'cg_drawcrosshair 14'"
+		//rect 305 225 30 30		//large size (30x30)
+		rect 307.5 227 25 25		//medium size (25x25)
+		//rect 310 229.5 20 20		//small size (20x20)
+		ITEM_STUFF
+		background "gfx/2d/crosshair16.tga"
+		style 1
+		XHAIR_COLOR
+		cvartest "fv_weapon"
+		showcvar {2 6 8}
+		}
+
+
+
+
+
+
+//------------------------------------------------------chain gun
+
+
+
+
+
+
+	itemDef 
+		{
+		name "xhair 10, circle with dot, 'cg_drawcrosshair 1'"
+		//rect 305 225 30 30	//large size (30x30)
+		rect 307.5 227.5 25 25	//medium size (25x25)
+		ITEM_STUFF
+		background "gfx/2d/crosshair1.tga"
+		style 1
+		XHAIR2_COLOR
+		cvartest "fv_weapon"
+		showcvar {13}
+		}
+}
