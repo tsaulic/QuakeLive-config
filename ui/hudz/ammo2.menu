@@ -1,0 +1,898 @@
+#include "ui/menudef.h"
+
+#define white 0 0 0 1
+#define mediumOrange 0 0 00 1
+#define lightRed 0 0 0 1
+#define	stacked 0 0 0 1
+
+menuDef
+{
+	name "hpValueAltFont"
+	rect 165 454 140 40
+	visible 1
+		
+	itemDef {
+		name "digit1_1"
+		rect 2 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 100 150 white
+		addColorRange 151 199 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d1_2"
+		rect 2 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 200 200 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d2_0"
+		rect 25 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/zero_32b.png"
+		addColorRange 100 100 white
+		addColorRange 101 109 white
+		addColorRange -999 999 1 1 1 0
+	}
+
+	itemDef {
+		name "d2_0"
+		rect 28 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/zero_32b.png"
+		addColorRange 200 200 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+
+	itemDef {
+		name "d2_0"
+		rect 54 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/zero_32b.png"
+		addColorRange 200 200 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d2_1"
+		rect 25 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 110 119 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d2_2"
+		rect 25 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 120 129 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d2_3"
+		rect 25 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/three_32b.png"
+		addColorRange 130 139 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d2_4"
+		rect 25 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/four_32b.png"
+		addColorRange 140 149 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d2_5"
+		rect 25 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/five_32b.png"
+		addColorRange 150 150 white
+		addColorRange 151 159 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d2_6"
+		rect 25 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/six_32b.png"
+		addColorRange 160 169 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d2_7"
+		rect 25 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/seven_32b.png"
+		addColorRange 170 179 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d2_8"
+		rect 25 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/eight_32b.png"
+		addColorRange 180 189 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d2_9"
+		rect 25 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/nine_32b.png"
+		addColorRange 190 199 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_0"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/zero_32b.png"
+		addColorRange 0 0 1 1 1 0
+		addColorRange 10 10 lightRed
+		addColorRange 20 20 lightRed
+		addColorRange 30 30 mediumOrange
+		addColorRange 40 40 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_1"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 11 11 lightRed
+		addColorRange 21 21 lightRed
+		addColorRange 31 31 mediumOrange
+		addColorRange 41 41 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_2"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 12 12 lightRed
+		addColorRange 22 22 lightRed
+		addColorRange 32 32 mediumOrange
+		addColorRange 42 42 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_3"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/three_32b.png"
+		addColorRange 13 13 lightRed
+		addColorRange 23 23 lightRed
+		addColorRange 33 33 mediumOrange
+		addColorRange 43 43 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_4"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/four_32b.png"
+		addColorRange 14 14 lightRed
+		addColorRange 24 24 lightRed
+		addColorRange 34 34 mediumOrange
+		addColorRange 44 44 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_5"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/five_32b.png"
+		addColorRange 15 15 lightRed
+		addColorRange 25 25 lightRed
+		addColorRange 35 35 mediumOrange
+		addColorRange 45 45 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_6"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/six_32b.png"
+		addColorRange 16 16 lightRed
+		addColorRange 26 26 mediumOrange
+		addColorRange 36 36 mediumOrange
+		addColorRange 46 46 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_7"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/seven_32b.png"
+		addColorRange 17 17 lightRed
+		addColorRange 27 27 mediumOrange
+		addColorRange 37 37 mediumOrange
+		addColorRange 47 47 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_8"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/eight_32b.png"
+		addColorRange 18 18 lightRed
+		addColorRange 28 28 mediumOrange
+		addColorRange 38 38 mediumOrange
+		addColorRange 48 48 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_9"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/nine_32b.png"
+		addColorRange 19 19 lightRed
+		addColorRange 29 29 mediumOrange
+		addColorRange 39 39 mediumOrange
+		addColorRange 49 49 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_0"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/zero_32b.png"
+		addColorRange 100 100 white
+		addColorRange 110 110 white
+		addColorRange 120 120 white
+		addColorRange 130 130 white
+		addColorRange 140 140 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_1"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 101 101 white
+		addColorRange 121 121 white
+		addColorRange 131 131 white
+		addColorRange 141 141 white
+		addColorRange -999 999 1 1 1 0
+	}
+
+	itemDef {
+		name "d3_1"
+		rect 48 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 111 111 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_2"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 102 102 white
+		addColorRange 112 112 white
+		addColorRange 122 122 white
+		addColorRange 132 132 white
+		addColorRange 142 142 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_3"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/three_32b.png"
+		addColorRange 103 103 white
+		addColorRange 113 113 white
+		addColorRange 123 123 white
+		addColorRange 133 133 white
+		addColorRange 143 143 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_4"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/four_32b.png"
+		addColorRange 104 104 white
+		addColorRange 114 114 white
+		addColorRange 124 124 white
+		addColorRange 134 134 white
+		addColorRange 144 144 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_5"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/five_32b.png"
+		addColorRange 105 105 white
+		addColorRange 115 115 white
+		addColorRange 125 125 white
+		addColorRange 135 135 white
+		addColorRange 145 145 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_6"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/six_32b.png"
+		addColorRange 106 106 white
+		addColorRange 116 116 white
+		addColorRange 126 126 white
+		addColorRange 136 136 white
+		addColorRange 146 146 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_7"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/seven_32b.png"
+		addColorRange 107 107 white
+		addColorRange 117 117 white
+		addColorRange 127 127 white
+		addColorRange 137 137 white
+		addColorRange 147 147 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_8"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/eight_32b.png"
+		addColorRange 108 108 white
+		addColorRange 118 118 white
+		addColorRange 128 128 white
+		addColorRange 138 138 white
+		addColorRange 148 148 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_9"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/nine_32b.png"
+		addColorRange 109 109 white
+		addColorRange 119 119 white
+		addColorRange 129 129 white
+		addColorRange 139 139 white
+		addColorRange 149 149 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_0"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/zero_32b.png"
+		addColorRange 50 50 mediumOrange
+		addColorRange 60 60 mediumOrange
+		addColorRange 70 70 mediumOrange
+		addColorRange 80 80 mediumOrange
+		addColorRange 90 90 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_1"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 51 51 mediumOrange
+		addColorRange 61 61 mediumOrange
+		addColorRange 71 71 mediumOrange
+		addColorRange 81 81 white
+		addColorRange 91 91 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_2"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 52 52 mediumOrange
+		addColorRange 62 62 mediumOrange
+		addColorRange 72 72 mediumOrange
+		addColorRange 82 82 white
+		addColorRange 92 92 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_3"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/three_32b.png"
+		addColorRange 53 53 mediumOrange
+		addColorRange 63 63 mediumOrange
+		addColorRange 73 73 mediumOrange
+		addColorRange 83 83 white
+		addColorRange 93 93 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_4"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/four_32b.png"
+		addColorRange 54 54 mediumOrange
+		addColorRange 64 64 mediumOrange
+		addColorRange 74 74 mediumOrange
+		addColorRange 84 84 white
+		addColorRange 94 94 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_5"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/five_32b.png"
+		addColorRange 55 55 mediumOrange
+		addColorRange 65 65 mediumOrange
+		addColorRange 75 75 mediumOrange
+		addColorRange 85 85 white
+		addColorRange 95 95 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_6"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/six_32b.png"
+		addColorRange 56 56 mediumOrange
+		addColorRange 66 66 mediumOrange
+		addColorRange 76 76 mediumOrange
+		addColorRange 86 86 white
+		addColorRange 96 96 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_7"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/seven_32b.png"
+		addColorRange 57 57 mediumOrange
+		addColorRange 67 67 mediumOrange
+		addColorRange 77 77 mediumOrange
+		addColorRange 87 87 white
+		addColorRange 97 97 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_8"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/eight_32b.png"
+		addColorRange 58 58 mediumOrange
+		addColorRange 68 68 mediumOrange
+		addColorRange 78 78 mediumOrange
+		addColorRange 88 88 white
+		addColorRange 98 98 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_9"
+		rect 41 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/nine_32b.png"
+		addColorRange 59 59 mediumOrange
+		addColorRange 69 69 mediumOrange
+		addColorRange 79 79 mediumOrange
+		addColorRange 89 89 white
+		addColorRange 99 99 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_0"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/zero_32b.png"
+		addColorRange 150 150 white
+		addColorRange 160 160 stacked
+		addColorRange 170 170 stacked
+		addColorRange 180 180 stacked
+		addColorRange 190 190 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_1"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 151 151 stacked
+		addColorRange 161 161 stacked
+		addColorRange 171 171 stacked
+		addColorRange 181 181 stacked
+		addColorRange 191 191 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_2"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 152 152 stacked
+		addColorRange 162 162 stacked
+		addColorRange 172 172 stacked
+		addColorRange 182 182 stacked
+		addColorRange 192 192 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_3"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/three_32b.png"
+		addColorRange 153 153 stacked
+		addColorRange 163 163 stacked
+		addColorRange 173 173 stacked
+		addColorRange 183 183 stacked
+		addColorRange 193 193 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_4"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/four_32b.png"
+		addColorRange 154 154 stacked
+		addColorRange 164 164 stacked
+		addColorRange 174 174 stacked
+		addColorRange 184 184 stacked
+		addColorRange 194 194 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_5"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/five_32b.png"
+		addColorRange 155 155 stacked
+		addColorRange 165 165 stacked
+		addColorRange 175 175 stacked
+		addColorRange 185 185 stacked
+		addColorRange 195 195 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_6"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/six_32b.png"
+		addColorRange 156 156 stacked
+		addColorRange 166 166 stacked
+		addColorRange 176 176 stacked
+		addColorRange 186 186 stacked
+		addColorRange 196 196 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_7"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/seven_32b.png"
+		addColorRange 157 157 stacked
+		addColorRange 167 167 stacked
+		addColorRange 177 177 stacked
+		addColorRange 187 187 stacked
+		addColorRange 197 197 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_8"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/eight_32b.png"
+		addColorRange 158 158 stacked
+		addColorRange 168 168 stacked
+		addColorRange 178 178 stacked
+		addColorRange 188 188 stacked
+		addColorRange 198 198 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_9"
+		rect 51 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/nine_32b.png"
+		addColorRange 159 159 stacked
+		addColorRange 169 169 stacked
+		addColorRange 179 179 stacked
+		addColorRange 189 189 stacked
+		addColorRange 199 199 stacked
+		addColorRange -999 999 1 1 1 0
+	}
+
+	itemDef {
+		name "d2_1"
+		rect 15 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 10 19 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+
+	itemDef {
+		name "d2_2"
+		rect 15 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 20 25 lightRed
+		addColorRange 26 29 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+
+	itemDef {
+		name "d2_3"
+		rect 15 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/three_32b.png"
+		addColorRange 30 39 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+
+	itemDef {
+		name "d2_4"
+		rect 15 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/four_32b.png"
+		addColorRange 40 49 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+
+	itemDef {
+		name "d2_5"
+		rect 15 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/five_32b.png"
+		addColorRange 50 59 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+
+	itemDef {
+		name "d2_6"
+		rect 15 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/six_32b.png"
+		addColorRange 60 69 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+
+	itemDef {
+		name "d2_7"
+		rect 15 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/seven_32b.png"
+		addColorRange 70 79 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+
+	itemDef {
+		name "d2_8"
+		rect 15 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/eight_32b.png"
+		addColorRange 80 80 mediumOrange
+		addColorRange 81 89 white
+		addColorRange -999 999 1 1 1 0
+	}
+
+	itemDef {
+		name "d2_9"
+		rect 15 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/nine_32b.png"
+		addColorRange 90 99 white
+		addColorRange -999 999 1 1 1 0
+	}
+
+	itemDef {
+		name "d3_1"
+		rect 28 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 1 1 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_2"
+		rect 28 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 2 2 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_3"
+		rect 28 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/three_32b.png"
+		addColorRange 3 3 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_4"
+		rect 28 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/four_32b.png"
+		addColorRange 4 4 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_5"
+		rect 28 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/five_32b.png"
+		addColorRange 5 5 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_6"
+		rect 28 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/six_32b.png"
+		addColorRange 6 6 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_7"
+		rect 28 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/seven_32b.png"
+		addColorRange 7 7 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_8"
+		rect 28 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/eight_32b.png"
+		addColorRange 8 8 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef {
+		name "d3_9"
+		rect 28 -2 28 32
+		visible 1
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		background "gfx/2d/numbers/nine_32b.png"
+		addColorRange 9 9 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+}
