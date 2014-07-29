@@ -1,0 +1,766 @@
+	//hud hp by meguro find it here:
+//http://qlhud.core.ws/id/2DI037
+
+#include "ui/menudef.h"
+
+#define white 1 1 1 1
+#define mediumOrange 1 0.75 0 1 //original values: 1 0.64 0.04 1
+#define lightRed 1 0 0 1
+
+
+menuDef
+{
+	name "hpValueAltFont"
+	rect 279 447 140 40 // 279 439 140 40
+	visible 1
+	
+	itemDef
+	{
+		name "d1_1"
+		rect -11 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 100 100 mediumOrange
+		addColorRange 101 150 white
+		addColorRange 151 199 0 0.75 1 1 
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d1_2"
+		rect -12 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 200 200 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d2_0"
+		rect 20 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/zero_32b.png"
+		addColorRange 100 100 mediumOrange
+		addColorRange 101 109 white
+		addColorRange 200 200 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d2_1"
+		rect 20 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 10 19 lightRed
+		addColorRange 110 119 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d2_2"
+		rect 20 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 20 29 lightRed
+		addColorRange 120 129 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d2_3"
+		rect 20 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/three_32b.png"
+		addColorRange 30 39 lightRed
+		addColorRange 130 139 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d2_4"
+		rect 20 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/four_32b.png"
+		addColorRange 40 45 lightRed
+          	addColorRange 45 49 mediumOrange
+		addColorRange 140 149 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d2_5"
+		rect 20 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/five_32b.png"
+		addColorRange 50 59 mediumOrange
+		addColorRange 150 150 white
+		addColorRange 151 159 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d2_6"
+		rect 20 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/six_32b.png"
+		addColorRange 60 69 mediumOrange
+		addColorRange 160 169 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d2_7"
+		rect 20 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/seven_32b.png"
+		addColorRange 70 79 mediumOrange
+		addColorRange 170 179 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d2_8"
+		rect 20 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/eight_32b.png"
+		addColorRange 80 89 mediumOrange
+		addColorRange 180 189 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d2_9"
+		rect 20 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/nine_32b.png"
+		addColorRange 90 99 mediumOrange
+		addColorRange 190 199 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_0"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/zero_32b.png"
+		addColorRange 0 0 lightRed
+		addColorRange 10 10 lightRed
+		addColorRange 20 20 lightRed
+		addColorRange 30 30 lightRed
+		addColorRange 40 40 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_1"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 1 1 lightRed
+		addColorRange 11 11 lightRed
+		addColorRange 21 21 lightRed
+		addColorRange 31 31 lightRed
+		addColorRange 41 41 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_2"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 2 2 lightRed
+		addColorRange 12 12 lightRed
+		addColorRange 22 22 lightRed
+		addColorRange 32 32 lightRed
+		addColorRange 42 42 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_3"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/three_32b.png"
+		addColorRange 3 3 lightRed
+		addColorRange 13 13 lightRed
+		addColorRange 23 23 lightRed
+		addColorRange 33 33 lightRed
+		addColorRange 43 43 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_4"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/four_32b.png"
+		addColorRange 4 4 lightRed
+		addColorRange 14 14 lightRed
+		addColorRange 24 24 lightRed
+		addColorRange 34 34 lightRed
+		addColorRange 44 44 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_5"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/five_32b.png"
+		addColorRange 5 5 lightRed
+		addColorRange 15 15 lightRed
+		addColorRange 25 25 lightRed
+		addColorRange 35 35 lightRed
+		addColorRange 45 45 lightRed
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_6"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/six_32b.png"
+		addColorRange 6 6 lightRed
+		addColorRange 16 16 lightRed
+		addColorRange 26 26 lightRed
+		addColorRange 36 36 lightRed
+		addColorRange 46 46 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_7"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/seven_32b.png"
+		addColorRange 7 7 lightRed
+		addColorRange 17 17 lightRed
+		addColorRange 27 27 lightRed
+		addColorRange 37 37 lightRed
+		addColorRange 47 47 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_8"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/eight_32b.png"
+		addColorRange 8 8 lightRed
+		addColorRange 18 18 lightRed
+		addColorRange 28 28 lightRed
+		addColorRange 38 38 lightRed
+		addColorRange 48 48 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_9"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/nine_32b.png"
+		addColorRange 9 9 lightRed
+		addColorRange 19 19 lightRed
+		addColorRange 29 29 lightRed
+		addColorRange 39 39 lightRed
+		addColorRange 49 49 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_0"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/zero_32b.png"
+		addColorRange 100 100 mediumOrange
+		addColorRange 110 110 white
+		addColorRange 120 120 white
+		addColorRange 130 130 white
+		addColorRange 140 140 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_1"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 101 101 white
+		addColorRange 111 111 white
+		addColorRange 121 121 white
+		addColorRange 131 131 white
+		addColorRange 141 141 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_2"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 102 102 white
+		addColorRange 112 112 white
+		addColorRange 122 122 white
+		addColorRange 132 132 white
+		addColorRange 142 142 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_3"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/three_32b.png"
+		addColorRange 103 103 white
+		addColorRange 113 113 white
+		addColorRange 123 123 white
+		addColorRange 133 133 white
+		addColorRange 143 143 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_4"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/four_32b.png"
+		addColorRange 104 104 white
+		addColorRange 114 114 white
+		addColorRange 124 124 white
+		addColorRange 134 134 white
+		addColorRange 144 144 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_5"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/five_32b.png"
+		addColorRange 105 105 white
+		addColorRange 115 115 white
+		addColorRange 125 125 white
+		addColorRange 135 135 white
+		addColorRange 145 145 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_6"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/six_32b.png"
+		addColorRange 106 106 white
+		addColorRange 116 116 white
+		addColorRange 126 126 white
+		addColorRange 136 136 white
+		addColorRange 146 146 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_7"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/seven_32b.png"
+		addColorRange 107 107 white
+		addColorRange 117 117 white
+		addColorRange 127 127 white
+		addColorRange 137 137 white
+		addColorRange 147 147 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_8"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/eight_32b.png"
+		addColorRange 108 108 white
+		addColorRange 118 118 white
+		addColorRange 128 128 white
+		addColorRange 138 138 white
+		addColorRange 148 148 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_9"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/nine_32b.png"
+		addColorRange 109 109 white
+		addColorRange 119 119 white
+		addColorRange 129 129 white
+		addColorRange 139 139 white
+		addColorRange 149 149 white
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_0"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/zero_32b.png"
+		addColorRange 50 50 mediumOrange
+		addColorRange 60 60 mediumOrange
+		addColorRange 70 70 mediumOrange
+		addColorRange 80 80 mediumOrange
+		addColorRange 90 90 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_1"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 51 51 mediumOrange
+		addColorRange 61 61 mediumOrange
+		addColorRange 71 71 mediumOrange
+		addColorRange 81 81 mediumOrange
+		addColorRange 91 91 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_2"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 52 52 mediumOrange
+		addColorRange 62 62 mediumOrange
+		addColorRange 72 72 mediumOrange
+		addColorRange 82 82 mediumOrange
+		addColorRange 92 92 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_3"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/three_32b.png"
+		addColorRange 53 53 mediumOrange
+		addColorRange 63 63 mediumOrange
+		addColorRange 73 73 mediumOrange
+		addColorRange 83 83 mediumOrange
+		addColorRange 93 93 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_4"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/four_32b.png"
+		addColorRange 54 54 mediumOrange
+		addColorRange 64 64 mediumOrange
+		addColorRange 74 74 mediumOrange
+		addColorRange 84 84 mediumOrange
+		addColorRange 94 94 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_5"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/five_32b.png"
+		addColorRange 55 55 mediumOrange
+		addColorRange 65 65 mediumOrange
+		addColorRange 75 75 mediumOrange
+		addColorRange 85 85 mediumOrange
+		addColorRange 95 95 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_6"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/six_32b.png"
+		addColorRange 56 56 mediumOrange
+		addColorRange 66 66 mediumOrange
+		addColorRange 76 76 mediumOrange
+		addColorRange 86 86 mediumOrange
+		addColorRange 96 96 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_7"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/seven_32b.png"
+		addColorRange 57 57 mediumOrange
+		addColorRange 67 67 mediumOrange
+		addColorRange 77 77 mediumOrange
+		addColorRange 87 87 mediumOrange
+		addColorRange 97 97 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_8"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/eight_32b.png"
+		addColorRange 58 58 mediumOrange
+		addColorRange 68 68 mediumOrange
+		addColorRange 78 78 mediumOrange
+		addColorRange 88 88 mediumOrange
+		addColorRange 98 98 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_9"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/nine_32b.png"
+		addColorRange 59 59 mediumOrange
+		addColorRange 69 69 mediumOrange
+		addColorRange 79 79 mediumOrange
+		addColorRange 89 89 mediumOrange
+		addColorRange 99 99 mediumOrange
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_0"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/zero_32b.png"
+		addColorRange 150 150 white
+		addColorRange 160 160 0 0.75 1 1
+		addColorRange 170 170 0 0.75 1 1
+		addColorRange 180 180 0 0.75 1 1
+		addColorRange 190 190 0 0.75 1 1
+		addColorRange 200 200 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_1"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/one_32b.png"
+		addColorRange 151 151 0 0.75 1 1
+		addColorRange 161 161 0 0.75 1 1
+		addColorRange 171 171 0 0.75 1 1
+		addColorRange 181 181 0 0.75 1 1
+		addColorRange 191 191 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_2"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/two_32b.png"
+		addColorRange 152 152 0 0.75 1 1
+		addColorRange 162 162 0 0.75 1 1
+		addColorRange 172 172 0 0.75 1 1
+		addColorRange 182 182 0 0.75 1 1
+		addColorRange 192 192 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_3"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/three_32b.png"
+		addColorRange 153 153 0 0.75 1 1
+		addColorRange 163 163 0 0.75 1 1
+		addColorRange 173 173 0 0.75 1 1
+		addColorRange 183 183 0 0.75 1 1
+		addColorRange 193 193 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_4"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/four_32b.png"
+		addColorRange 154 154 0 0.75 1 1
+		addColorRange 164 164 0 0.75 1 1
+		addColorRange 174 174 0 0.75 1 1
+		addColorRange 184 184 0 0.75 1 1
+		addColorRange 194 194 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_5"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/five_32b.png"
+		addColorRange 155 155 0 0.75 1 1
+		addColorRange 165 165 0 0.75 1 1
+		addColorRange 175 175 0 0.75 1 1
+		addColorRange 185 185 0 0.75 1 1
+		addColorRange 195 195 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_6"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/six_32b.png"
+		addColorRange 156 156 0 0.75 1 1
+		addColorRange 166 166 0 0.75 1 1
+		addColorRange 176 176 0 0.75 1 1
+		addColorRange 186 186 0 0.75 1 1
+		addColorRange 196 196 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_7"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/seven_32b.png"
+		addColorRange 157 157 0 0.75 1 1
+		addColorRange 167 167 0 0.75 1 1
+		addColorRange 177 177 0 0.75 1 1
+		addColorRange 187 187 0 0.75 1 1
+		addColorRange 197 197 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_8"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/eight_32b.png"
+		addColorRange 158 158 0 0.75 1 1
+		addColorRange 168 168 0 0.75 1 1
+		addColorRange 178 178 0 0.75 1 1
+		addColorRange 188 188 0 0.75 1 1
+		addColorRange 198 198 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+	itemDef
+	{
+		name "d3_9"
+		rect 52 -5 32 40
+		visible 1
+		ownerdraw CG_PLAYER_HEALTH
+		background "gfx/2d/numbers/nine_32b.png"
+		addColorRange 159 159 0 0.75 1 1
+		addColorRange 169 169 0 0.75 1 1
+		addColorRange 179 179 0 0.75 1 1
+		addColorRange 189 189 0 0.75 1 1
+		addColorRange 199 199 0 0.75 1 1
+		addColorRange -999 999 1 1 1 0
+	}
+	
+}
+
